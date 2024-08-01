@@ -24,4 +24,9 @@ public class NinjasService {
         return repository.findAll();
     }
 
+    // deleter um ninja por id
+    public void deleteNinja(Long id) {
+        repository.deleteById(id);
+    }
+
 }
